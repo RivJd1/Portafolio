@@ -2,7 +2,7 @@ import fotoPerfil from "../assets/perfil.jpeg";
 import carro from "../assets/carro.jpeg";
 import casa from "../assets/casa.jpeg";
 import desarrollo from "../assets/desarrollo.jpeg";
-import redes from "../assets/redes.jpeg";
+import portales from "../assets/portales.jpeg";
 
 export const perfil = {
   foto: fotoPerfil,
@@ -50,10 +50,40 @@ export const historial = [
 ];
 
 export const proyectos = [
-  { titulo: "Proyecto 1", texto: "Robot de pelea.", imagen: carro},
-  { titulo: "Proyecto 2", texto: "Casa inteligente.", imagen: casa},
-  { titulo: "Proyecto 3", texto: "Prueba de equipos en Cisco Packet Tracer.", imagen: desarrollo},
-  { titulo: "Proyecto 4", texto: "Desarrollo de software en windows forms.", imagen: redes},
+  {
+    titulo: "Robot de Pelea",
+    texto: "Robot con placa de desarrollo arduino.",
+    imagen: carro,
+    integrantes: ["Josué David Rivera Ortega", "Laura Fabiola Berganza", "Juan Carlos Godoy Espinoza",],
+    descripcion:
+      "Este proyecto se llevo acabo en la clase de sistemas automatizados, fue desarrollado en un" +
+      "placa arduino, con dos motores y un sensor IR, el prototipo de la imagen fue el primero pero, mas." + 
+      "el final se llevo acabo dentro de una carcasa impresa en 3D y una rampa sumamnete EPICA"
+  },
+  {
+    titulo: "Casa Inteligente",
+    texto: "Casa automatizada.",
+    imagen: casa,
+    integrantes: ["Josué David Rivera Ortega"],
+    descripcion: "Este proyecto se llevo acabo con una placa de desarrollo arduino MEGA, al ser pues una casa automatizada" +
+    "que contaba con sistemas como una alarma para puertas, una bomba de agua, un sisetma de garaje automatizado y etc."
+  },
+  {
+    titulo: "Proyecto en Windows Forms",
+    texto: "Sistema de negocio para joyería.",
+    imagen: desarrollo,
+    integrantes: ["Josué David Rivera Ortega"],
+    descripcion: "En este apartado mi trabaje en un proyecto que tenía el objetivo principal de controlar un sistema facturación" +
+    "fue para una joyería ficticia de una clase de Desarrollo de Software. El proyecto se desarrollo con windows forms con mysql"
+  },
+  {
+    titulo: "Sistema de asignación de Aulas UNICAH",
+    texto: "Desarrollo de API para frontend.",
+    imagen: portales,
+    integrantes: ["Josué David Rivera Ortega"],
+    descripcion: "En esta ocasión tuve la oportunidad de desarrollar una API en laravel donde configure distintas rutas que" +
+    "luego enviaba a un servidor remoto para hacer su respectivas pruebas en el programa BRUNO"
+  },
 ];
 
 export const navItems = [
